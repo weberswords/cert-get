@@ -4,24 +4,24 @@
 	<meta charset="utf-8"/>
 	<title>Virgil Con Certificates</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="index.js"></script>
-	<script src="https://unpkg.com/markerjs"></script>
 </head>
 <body>
-<div class="container">
-	<div class="alert">
-		<div class="form-group">
-			<label>Enter the name you would like to have on your certificate.</label>
-			<input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Soraya Jones">
-		</div>
-		<button class="btn btn-primary" onclick="(function(){
-	var name = document.getElementById('name').value;
-	alert(name + ' Certificate blerp!');})()">Ok</button>
-	</div>
-	<div id="certificate">
-		 <img src="certificate.png">
-	</div>
+<div class="container" id="nav"></div>
+<div class="container" id="container">
+	<canvas id="canvas"></canvas>
+	<!--<div class="alert">-->
+		<!--<div class="form-group">-->
+			<!--<label>Enter the name you would like to have on your certificate.</label>-->
+			<!--<input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Soraya Jones">-->
+		<!--</div>-->
+		<!--<button class="btn btn-primary" onclick="renderNewCertificate(document.getElementById('name').value)">Ok</button>-->
+	<!--</div>-->
+	<!--<div id="certificate">-->
+		 <!--<img src="certificate.png">-->
+	<!--</div>-->
 </div>
 </body>
 </html>

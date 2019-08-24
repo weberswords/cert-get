@@ -2,7 +2,7 @@ body {
 	text-align: center;
 }
 
-img {
+img, canvas {
 	width: 75vw;
 }
 
