@@ -1,0 +1,30 @@
+body {
+	text-align: center;
+}
+
+img {
+	width: 75vw;
+}
+
+text {
+	color: black;
+}
+
+.container {
+	margin: 20px;
+	padding: 20px;
+}
+
+div.alert {
+	background-color: #d3d3d3;
+	position: absolute;
+	top: 150px;
+	left: 25%;
+	opacity: 50%;
+	z-index: 1;
+	width: 400px;
+
+}
+p, button, div {
+	text-align: center;
+}
