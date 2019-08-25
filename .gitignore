@@ -78,3 +78,6 @@ typings/
 # Serverless directories
 .serverless/
 
+#Mac Development
+.DS_Store
+
