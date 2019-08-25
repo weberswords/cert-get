@@ -6,17 +6,18 @@ let courses = {
     4: "This title is really long and I don't think it has to be"
 };
 
-function addText(context, text, x, y) {
-
-}
-
 function createDownloadButton(url) {
+    let children = document.getElementById('nav').childNodes;
     let a = document.createElement('a');
     a.className = 'btn btn-primary';
     a.download = 'VirgilCon2019.png';
     a.href = url.toDataURL();
     a.textContent = 'Download certificate';
-    document.getElementById('nav').appendChild(a);
+    if (children.length > 0) {
+        document.getElementById('nav').replaceChild(a, children[0]);
+    } else {
+        document.getElementById('nav').appendChild(a);
+    }
 }
 
 function setAttributes(canvas, image, context) {
